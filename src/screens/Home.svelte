@@ -182,12 +182,7 @@
 	ulist.subscribe(val => {
 		_ulist = val;
 	});
-	var isdev
-	if($user.name) {
-		isdev = admins.includes($user.name.toLowerCase())
-	} else {
-		isdev = false
-	}
+	var isdev=true
 </script>
 
 <div class="home">
@@ -210,6 +205,7 @@
 	{:then}
 		<Container>
 			<!-- cst: comments probably from blocs: -->
+			{#if isdev}
 			<div class="settings-controls">
 				<button
 					class="circle settings"
@@ -220,6 +216,7 @@
 					title="Developer tools (not the chrome thing)"
 				>
 			</div>
+			{/if}
 			<!-- Zed just told me the cl4 port will move the mod panel to a seperate site -->
 			<h1>Home</h1>
 			There are currently {_ulist.length} user(s) online{#if _ulist.length}{" "}({_ulist.join(
