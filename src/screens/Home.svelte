@@ -39,7 +39,7 @@
 	let numPages = null;
 	let postErrors = "";
   	const admins = ["wlodekm","wlodekm2","wlodekm3","wlodekm4","wlodekm5","susRoblox888i","car","cow","ducky","Very_Interesting_Bid"]
-	if($user.name !== undefined) {
+	if($user.name) {
 		console.log(`User: ${$user.name} \n ${admins.includes($user.name.toLowerCase())}`)
 	}
 
@@ -183,7 +183,7 @@
 		_ulist = val;
 	});
 	var isdev
-	if($user.name !== undefined) {
+	if($user.name) {
 		isdev = admins.includes($user.name.toLowerCase())
 	} else {
 		isdev = false
