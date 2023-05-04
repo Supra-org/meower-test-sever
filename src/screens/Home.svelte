@@ -182,10 +182,11 @@
 	ulist.subscribe(val => {
 		_ulist = val;
 	});
+	var isdev
 	if($user.name !== undefined) {
-		var isdev = admins.includes($user.name.toLowerCase())
+		isdev = admins.includes($user.name.toLowerCase())
 	} else {
-		var isdev = false
+		isdev = false
 	}
 </script>
 
