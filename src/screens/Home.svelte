@@ -40,7 +40,7 @@
 	let postErrors = "";
   	const admins = ["wlodekm","wlodekm2","wlodekm3","wlodekm4","wlodekm5","susRoblox888i","car","cow","ducky","Very_Interesting_Bid"]
 	if($user.name !== undefined) {
-	console.log(`User: ${$user.name} \n ${admins.includes($user.name.toLowerCase())}`)
+		console.log(`User: ${$user.name} \n ${admins.includes($user.name.toLowerCase())}`)
 	}
 
 	// As we use a Load More button and the home is sorted newest-first,
@@ -183,7 +183,10 @@
 		_ulist = val;
 	});
 	if($user.name !== undefined) {
-	var isdev = admins.includes($user.name.toLowerCase())}
+		var isdev = admins.includes($user.name.toLowerCase())
+	} else {
+		var isdev = false
+	}
 </script>
 
 <div class="home">
