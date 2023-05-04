@@ -317,8 +317,13 @@
 						loginStatus =
 							"You must specify a username and a password to create an account!";
 						return false;
-					}
-
+					} 
+					if (password.length < 8) {
+						loginStatus =
+							"You must specify a password that's atleast 8 characters long!";
+						return false;
+					} 
+					
 					loginStatus = "Creating account...";
 
 					clm.meowerRequest({
