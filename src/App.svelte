@@ -260,6 +260,9 @@
 		--foreground-orange: white;
 	}
 
+	#main.font-null {
+		font-family: Simvoni, sans-serif ;
+	}
 	#main.font-undefined {
 		font-family: Simvoni, sans-serif ;
 	}
