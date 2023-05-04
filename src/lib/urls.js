@@ -4,7 +4,7 @@
 
 export const linkUrl =
 	localStorage.getItem("meower_linkurl") ||
-	"wss://testapi.meower.org/v0/cloudlink/";
+	"wss://testcl.meower.org/";
 export const apiUrl =
 	localStorage.getItem("meower_apiurl") || "wss://testcl.meower.org/";
 export const encodeApiURLParams =
