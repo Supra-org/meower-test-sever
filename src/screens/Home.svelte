@@ -280,6 +280,7 @@
 					}
 				}}
 			>
+			<!-- wlodekm: yeay i finally fixed it -->
 				<textarea
 					type="text"
 					class="white"
@@ -287,7 +288,7 @@
 					id="postinput"
 					name="postinput"
 					autocomplete="false"
-					maxlength="4000" <!-- yeay i finally fixed it -->
+					maxlength="4000" 
 					rows="1"
 					use:autoresize
 					on:input={() => {
